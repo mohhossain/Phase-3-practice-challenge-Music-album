@@ -12,14 +12,14 @@
 
 ActiveRecord::Schema.define(version: 2021_10_26_124532) do
 
-  create_table "customers", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
+  create_table "bands", force: :cascade do |t|
+    t.string "name"
+    t.string "hometown"
   end
 
-  create_table "restaurants", force: :cascade do |t|
-    t.string "name"
-    t.integer "price"
+  create_table "venues", force: :cascade do |t|
+    t.string "title"
+    t.string "city"
   end
 
 end
