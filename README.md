@@ -152,8 +152,6 @@ database.
 
 #### Band
 
-- `Band.most_performances`
-  - returns the `Band` instance for the band that has played the most concerts
 - `Band#play_in_venue(venue, date)`
   - takes a venue (`Venue` instance) and date (as a string) as arguments
   - creates a new concert for the band in that venue on that date
@@ -166,6 +164,11 @@ database.
 {insert band hometown}"
 ```
 
+- `Band.most_performances`
+  - returns the `Band` instance for the band that has played the most concerts
+  - **Note**: solving this using only Active Record methods is possible, but
+    difficult. Feel free to use regular Ruby enumerable methods here.
+
 #### Venue
 
 - `Venue#concert_on(date)`
@@ -173,3 +176,5 @@ database.
   - finds and returns the first concert on that date at that venue
 - `Venue#most_frequent_band`
   - returns the band with the most concerts at the venue
+  - **Note**: solving this using only Active Record methods is possible, but
+    difficult. Feel free to use regular Ruby enumerable methods here.
