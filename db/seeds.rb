@@ -5,14 +5,14 @@ Venue.destroy_all
 Band.destroy_all
 
 puts "Creating Venues..."
-la_venue = Venue.create(title: "la_venue", city: "LA")
-chi_venue = Venue.create(title: "chi_venue", city: "Chicago")
-nyc_venue = Venue.create(title: "nyc_venue", city: "NYC")
+la_venue = Venue.create(title: "The Roxy", city: "LA")
+chi_venue = Venue.create(title: "Subterranean", city: "Chicago")
+nyc_venue = Venue.create(title: "Terminal 5", city: "NYC")
 
 puts "Creating Bands..."
-ny_band = Band.create(name: "NY band", hometown: "NYC")
-la_band = Band.create(name: "LA band", hometown: "LA")
-chi_band = Band.create(name: "Chicago band", hometown: "Chicago")
+ny_band = Band.create(name: "LCD Soundsystem", hometown: "NYC")
+la_band = Band.create(name: "Muna", hometown: "LA")
+chi_band = Band.create(name: "Noname", hometown: "Chicago")
 
 puts "Creating Concerts..."
 # ****************************************************************
